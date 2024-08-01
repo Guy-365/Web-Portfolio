@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> Icebreg </title> 
+        <link rel="stylesheet" href="styles.css">      
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+            <nav>
+                <img src="Acrown.png" class="Logo">
+                <a href="https://youtu.be/vwy4QinlKD8"><img src="Prinz.jpeg" alt="Music" id="Prinz-Music"></a>
+                <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#Hobbies-list">Hobbies</a></li>
+                </ul>
+                </nav>
+                <div>
+                </div>
+                <div class="header-text">
+                    <p id="My-para"> I love Aeronautics/Enginnering/Architecture</p>
+                    <h1> Hi, I'm Amarnie Edwards</h1> 
+                </div>
+                <img src="space.jpeg" id="Pic-1" alt="X-37">
+                <img src="plane.jpg" id="Pic-2" alt="Wing">
+                <img src="Raptor.gif" id="Pic-3" alt="Wheels">
+            </div>
+        </div>
+        <!--- ---------about----------- --->
+        <div id="about" style="clear: right;">
+            <div class="container">
+                <div class="row"> 
+                    <div class="about-col-1">  
+                        <img src="Face-Me.jpg">
+                    </div>    
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me </h1>
+                        <p id="para-1"> My name is Amarnie Solomon Edwards I'm fifteen years old, I was born on March 16,2009, which makes me a Pieces. 
+                            I am a Homeschooler i've been one scene I was nine years old.</p> 
+                            <div class="tab-titles">
+                                <p class="tab-links  active-link" onclick="opentab('experience')">Experince</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('goals')">Goals</p>
+                            </div> 
+                            <div class="tab-contents active-tab" id="experience">
+                                <ul>
+                                    <li><span>I have flown a Cessna 172 and a glider</span><br>with an instructor at 13 years old</li>
+                                    <li><span>I have competed in a team</span><br> Cyber Patriot Competition and came in third place</li>
+                                    <li><span>I have gotten my AED Certifacation</span><br> and First-Aid Certification </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>I was in a four week progam where I  learned</span><br> all about the human body and the way everthing works</li>
+                                    <li><span>When I was twelve I participated in a progam called mock trail </span><br> where they teach you how to be an attorney</li>
+                                </ul>
+                            </div>
+                    <div class="tab-contents" id="goals">
+                            <div class="row-goals"> 
+                                <div class="column">  
+                                <h4 class="H4-1"> Goals During High School</h4>
+                                <hr>
+                                <ol>
+                                    <li class="Goal-List"> Reach Eagle Scout At 17 Years Old</li>
+                                    <li class="Goal-List"> Get My Pilot Licence before I Am 18 Years Old</li>
+                                    <li class="Goal-List"> Get my UAVs Licence</li>
+                                </ol>
+                                </div>
+                            </div>
+                        
+                        <div class="row-goals"> 
+                            <div class="column">  
+                            <h4 class="H4-2">Goals After High School</h4>
+                            <hr>
+                                <ol>
+                                <li class="Goal-List">I to be either a Robotics Engineering, Aerospace Engineering, or and a Pilot</li>
+                                <li><span> I want to go to either Temple University, Howard University, CalTech,or Coppin State University </span><br> and First-Aid Certification </li>
+                                <li><span> I want to get my Bachelor's Degree and major in Mechanical Engineering,</span><br> Aerospace Engineering, and Aviation </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>               
+            </div>
+        </div>
+        <!----------Portfolio---------->
+        <div id="Portfolio">
+            <div class="container">
+                <h1 class="sub-title">Hobbies</h1>
+                <div id="Hobbies-list">
+                    <div class="Hobbies">
+                        <div class="layer">
+                            <h3> Civil Air Patrol</h3>
+                            <img src="Civil.png"class="Pic-4">
+                            <p class="para-2">In <a href="https://granite.cap.gov">Granite Cadet Squadron</a> I am a Chief Master Sergent, I learn leadership skills, Aeronautics, Enginnering, CyberSecurity,and Emergency Services </p>
+                        </div>
+                    </div>
+                    <div class="layer"> 
+                        <h3>Boy Scouts Of America</h3>
+                        <img src="Boy Scouts.webp"class="Pic-4">
+                        <p class="para-2">In<a href="https://www.scouting.org"> Boy Scout</a> I am a First Class Scout and within that program learned life skills like cooking, architecture, camping, personal Fitness, and alot more and there is a chance of getting Eagle Scout.</p>
+                        
+                    </div>
+                    <div class="layer">
+                        <h3>The Hidden Genius Project</h3>
+                        <img src="Hidden Logo.png"class="Pic-4">               
+                        <p class="para-2"> In <a href="https://www.hiddengeniusproject.org"> the Hidden Genius Project, </a>I have learned a lot in entrepreneurship, Coding, Leadership and ontop of that we get life time friends and as of now my time here be amazing </p>
+                    </div>
+                </div>      
+            </div>
+        </div>
+        <!----------Links---------->
+        <div>
+            <h4 class="Gitlink">Github Projects <span>Click Image</span></h4>
+            <a href="https://github.com/Guy-365/Python-Projects"><img src="Github.png" alt="Git" class="GitLink"></a>
+        </div>
+        <!----Java Script-->
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+                }
+        </script>
+        <script>
+            window.location = 'main.html#about-nav';
+            window.location = 'main.html#hobbies-nav';
+
+        </script>
+
+    </body>                  
+</html> 

@@ -1,0 +1,264 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family:'Poppins', sans-serif;
+  box-sizing:border-box;
+}
+body{
+  background-color: #555555;
+  color:#fff
+}
+
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(back.png);
+  background-size:cover;
+  background-position:center;
+}
+.container{
+    padding: 10px 10%;
+} 
+#para-1{
+  font-size:25px;
+}
+#My-para{
+  color:#c13b3b87;
+  font-size: 20px;
+}
+h1{
+  font-size: 35px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+.Logo{
+  width: 160px;
+  border-radius:30px;
+  filter :drop-shadow(7px 5px 4px #e4d06c);
+} 
+#Prinz-Music{
+  width:250px;
+  height:170px ;
+  border-radius: 80px;
+  filter :drop-shadow(5px 3px 3px #4fc8bc);
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  color:#8d0000;
+  text-decoration:none;
+  font-size:20px;
+  position: relative;
+}
+nav ul li a::after{
+  content:'' ;
+  width:0%;
+  height:3px ;
+  background:#31a3b4;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width:100%;
+}
+.header-text{
+  margin-top:10%;
+  font-size:100%;
+  float:left;
+} 
+#Pic-1{
+  float:left;
+  border:10px outset #9d9d9d ;
+  width: 600px;
+  height: 390px;
+  margin-left: 500px;
+}
+#Pic-2{
+  clear: left;
+  float:left;
+  border:10px outset #9d9d9d ;
+  width: 600px;
+  height:390px;
+  margin-left:50px;
+
+}
+#Pic-3{
+  clear: left;
+  width:600px;
+  height:390px;
+  margin-top: -370px;
+  border:10px outset #9d9d9d  ;
+  float:right;
+  margin-right: 60px;
+
+}
+
+/* ----------------about------------------*/
+#about{
+  padding: 80px 0;
+  color: #ababab;
+  scroll-behavior: auto;
+}
+.row{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+.about-col-2{
+  flex-basis: 60%;
+}
+.sub-title{
+  font-size: 70px;
+  font-weight: 600;
+  color: #8d0000;
+  box-shadow: 50px #000000;
+}
+.tab-titles{
+  display:flex;
+  margin: 20px 0 40px;
+}
+.tab-links{
+  margin-right: 50px;
+  font-size: 19px;
+  font-weight: 500;
+  cursor:pointer;
+  position: relative;
+  color: #8d0000;
+}
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background:#6cd4e4 ;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after{
+  width: 100%;
+
+}
+.tab-contents ul li{
+  list-style:none;
+  margin: 10px 0;
+  color: #c2bebe;
+  font-size: 20px;
+}
+.tab-contents{
+  display:none;
+}
+.tab-contents.active-tab{
+  display: block;
+}
+hr{
+  width: 300px;
+  color: #8a938d;
+}
+.H4-1{
+  font-size: 25px;
+  font-style:italic;
+  padding: 10px;
+  margin-left: -20px;
+  color: #8d0000;
+}
+.Goal-List{
+padding-top:10px;
+font-size:17px;
+}
+.H4-2{
+  font-size: 25px;
+  font-style:italic;
+  padding: 10px;
+  margin-left: -20px;
+  color: #8d0000;
+  
+}
+/*-------------Hobbies-----------------*/
+#Portfolio{
+  padding: 50px 0;
+}
+#Hobbies-list{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  scroll-behavior: smooth;
+}
+.Hobbies{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.Hobbies img{
+  width:100%;
+  border-radius:60px;
+  display: block;
+ 
+}
+.Pic-4{
+  width:450px;
+  height:500px;
+  border-radius:60px;
+  border:10px solid #9d9d9d  ;
+}
+.para-2{
+  font-size: 20px;
+}
+h3{
+  font-size: 30px;
+  font-style: bold;
+  color: black;
+  margin-bottom:30px;
+}
+/*Column and row layout*/
+.row-goals{
+  display: flexbox;
+}
+.column{
+  flex: 50%;
+}
+@media only screen and (max-width: 500px){
+  .Pic-4{
+    width: 49.99999%;
+  }
+  .Pic-1, .Pic-2, .Pic-3{
+    width: 70px;
+    height: 40px;
+  }
+  #Prinz-Music{
+  width:190px;
+  height:120px;
+  float:10%;
+  }
+}
+.GitLink{
+  width: 500px;
+  border-radius:80px;
+  filter :drop-shadow(7px 5px 4px #00ffdd);
+}
+.Gitlink{
+font-size:30px;
+color:#8d0000;
+}
+.GitLink, .Gitlink{
+padding-left:90px;
+padding: 20px;
+}
