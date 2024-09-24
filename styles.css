@@ -159,8 +159,8 @@ nav ul li a:hover::after{
 .tab-contents ul li{
   list-style:none;
   margin: 10px 0;
-  color: #c2bebe;
-  font-size: 20px;
+  color: #000000;
+  font-size: 30px;
 }
 .tab-contents{
   display:none;
@@ -173,22 +173,22 @@ hr{
   color: #8a938d;
 }
 .H4-1{
-  font-size: 25px;
+  font-size: 29px;
   font-style:italic;
   padding: 10px;
   margin-left: -20px;
-  color: #8d0000;
+  color: #008d7f;
 }
 .Goal-List{
 padding-top:10px;
 font-size:17px;
 }
 .H4-2{
-  font-size: 25px;
+  font-size: 29px;
   font-style:italic;
   padding: 10px;
   margin-left: -20px;
-  color: #8d0000;
+  color: #008d7f;
   
 }
 /*-------------Hobbies-----------------*/
@@ -262,3 +262,4 @@ color:#8d0000;
 padding-left:90px;
 padding: 20px;
 }
+
